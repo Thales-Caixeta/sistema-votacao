@@ -20,3 +20,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def mostrar_resultado():
+    print("\n=== Resultado da votação ===")
+    for opcao, votos in opcoes.items():
+        print(f"{opcao}: {votos} voto(s)")
+    vencedor = max(opcoes, key=opcoes.get)
+    print(f"Vencedor: {vencedor}")
