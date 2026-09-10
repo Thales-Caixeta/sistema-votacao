@@ -5,7 +5,7 @@ opcoes = {"A": 0, "B": 0}
 def votar(opcao):
     if opcao in opcoes:
         opcoes[opcao] += 1
-        print(f"Voto computado para {opcao}!")
+        print(f"Voto computado para {opcao}! Total até agora: {opcoes[opcao]}")
     else:
         print("Opção inválida.")
 
